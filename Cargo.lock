@@ -1304,8 +1304,7 @@ dependencies = [
 [[package]]
 name = "serde-wasm-bindgen"
 version = "0.6.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "30c9933e5689bd420dc6c87b7a1835701810cbc10cd86a26e4da45b73e6b1d78"
+source = "git+https://github.com/carlsverre/serde-wasm-bindgen?rev=638e36ea6c6334a709c582961cf457ed712d84b3#638e36ea6c6334a709c582961cf457ed712d84b3"
 dependencies = [
  "js-sys",
  "serde",

@@ -29,11 +29,13 @@ tokio = { version = "1.28", default-features = false }
 url = "2.4.0"
 wasm-bindgen = "=0.2.86"
 wasm-bindgen-futures = "0.4.36"
-serde-wasm-bindgen = "0.6.0"
 wasm-streams = "0.3.0"
 worker-kv = "0.6.0"
 worker-macros = { path = "../worker-macros", version = "0.0.10" }
 worker-sys = { path = "../worker-sys", version = "0.0.10" }
+
+# required to use internally tagged enums with serde_bytes
+serde-wasm-bindgen = { git = "https://github.com/carlsverre/serde-wasm-bindgen", rev = "638e36ea6c6334a709c582961cf457ed712d84b3" }
 
 [dependencies.web-sys]
 version = "0.3.63"
